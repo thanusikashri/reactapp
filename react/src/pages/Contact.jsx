@@ -3,7 +3,7 @@ import './Page.css'
 import inst from '../assets/inst.webp'
 import wp from '../assets/wp.webp'
 import tw from '../assets/tw.webp'
-import bg from '../assets/bg1.jpg'
+import bg from '../assets/bg.jpg'
 
 function Contact(props) {
   return (
