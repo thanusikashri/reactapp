@@ -6,12 +6,30 @@
 }
 
 .page h2 {
-  font-size: 2rem;
+  font-size: 28px;
   margin-bottom: 20px;
-  color: #0078d7;
+  color: #01185e;
 }
 
-.page p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.page h3 {
+  font-size: 20px;
+  line-height: 1.5;
 }
+
+.image {
+  height: 240px;
+  width: 60%;
+}
+
+.imagee {
+  height: 200px;
+}
+
+.logo a {
+    padding: 10px;
+}
+
+.logo a img {
+    border-radius: 18px;
+}
+
