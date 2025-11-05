@@ -9,7 +9,6 @@ function UserForm({formData, onChange, onSubmit}) {
                    value={formData.name}
                    onChange={onChange}
                    placeholder='Enter your name'
-                   
                 />
             </label>
 
@@ -21,7 +20,6 @@ function UserForm({formData, onChange, onSubmit}) {
                    value={formData.email}
                    onChange={onChange}
                    placeholder='Enter your email'
-            
                 />
             </label>
             
@@ -33,7 +31,6 @@ function UserForm({formData, onChange, onSubmit}) {
                    value={formData.age}
                    onChange={onChange}
                    placeholder='Enter your age'
-                   
                 />
             </label>
 
@@ -46,7 +43,7 @@ const styles = {
   form: {
     display: "flex",
     flexDirection: "column",
-    gap: "10px",
+    gap: "20px",
     width: "300px",
   },
 }

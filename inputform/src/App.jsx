@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import UserForm from './components/UserForm'
 import PreviewCard from './components/PreviewCard'
 
@@ -8,6 +8,11 @@ function App () {
         email: "",
         age: "",
     })
+
+    useEffect(() => {
+        console.log("Form data updated:", formData);
+        localStorage.setItem("userFormData",JSON.stringify(formData));
+    }, [formData])
 
     const handleChange = (e) => {
         const {name, value} = e.target
@@ -29,7 +34,7 @@ function App () {
     }
 
     return (
-        <div className='app-container' style={styles.container}>
+        <div style={styles.container}>
             <h1>User Input Form with Live Preview</h1>
 
             <UserForm 

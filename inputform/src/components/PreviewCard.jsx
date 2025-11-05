@@ -2,9 +2,9 @@ function PreviewCard({data}) {
     return (
         <div style={styles.card}>
             <h2>Live Preview</h2>
-            <p><strong>Name: </strong> {data.name || ""}</p>
-            <p><strong>Email: </strong> {data.email || ""}</p>
-            <p><strong>Age: </strong> {data.age || ""}</p>
+            <p><strong>Name: </strong> {data.name}</p>
+            <p><strong>Email: </strong> {data.email}</p>
+            <p><strong>Age: </strong> {data.age}</p>
         </div>
     )
 }

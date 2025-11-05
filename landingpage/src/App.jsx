@@ -12,7 +12,6 @@ function App() {
     <Router>
       <video autoPlay loop muted playsInline className='video'>
         <source src={video} />
-        Your browser does not support the video tag.
       </video>
       <div>
         <Navbar />
