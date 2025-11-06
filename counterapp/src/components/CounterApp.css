@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #dbeafe, #bfdbfe);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.count {
+  font-size: 40px;
+}
+
+.count.positive {
+  color: rgb(94, 172, 94);
+}
+
+.count.negative {
+  color: rgb(231, 121, 121);
+}
+
+.count.neutral {
+  color: rgb(149, 149, 149);
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.increment {
+  background-color: rgb(94, 172, 94);
+}
+
+.btn.decrement {
+  background-color: rgb(231, 121, 121);
+}
+
+.reset-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.reset-btn:hover {
+  transform: scale(1.05);
+}
+
+.reset-btn.pos {
+  background-color: rgb(94, 172, 94);
+}
+
+.reset-btn.neg {
+  background-color: rgb(231, 121, 121);
+}
+
+.reset-btn.neu {
+  background-color: rgb(143, 142, 142);
+}
