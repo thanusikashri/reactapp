@@ -10,7 +10,7 @@ export default function App(){
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Login/>} />
-      <Route path='/dashboard' element={username ? <Dashboard /> : <Navigate to="/" />} />
+      <Route path='/dashboard' element={<Dashboard/> } />
     </Routes>
     </BrowserRouter>
   )

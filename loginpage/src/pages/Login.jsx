@@ -10,7 +10,7 @@ export default function Login(){
     function handleLogin(e) {
         e.preventDefault()
         if (name.trim() === '') {
-            alert('Please enter a username')
+            alert('Please enter a name')
             return
         }
         setUsername(name)

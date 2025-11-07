@@ -14,19 +14,16 @@ export default function Dashboard() {
     const isDark = theme === 'dark'
 
     const pageStyle = {
-        backgroundColor: isDark ? '#222' : '#f5f5f5',
+        backgroundColor: isDark ? 'black' : 'white',
         color: isDark ? 'white' : 'black'
     }
     return (
         <div style={pageStyle}>
-            <h1>Welcome, {username}</h1>
+            <h1>Welcome!!! {username}</h1>
             <button onClick={toggleTheme} style={styles.button}>
-                Switch to {isDark ? 'Light' : 'Dark'} Mode
-            </button>
+                Switch to {isDark ? 'Light' : 'Dark'} Mode </button>
 
-        <button onClick={handleLogout} style={{...styles.button}}>
-            Logout
-        </button>
+        <button onClick={handleLogout} style={styles.button}>Logout</button>
         </div>
     )}
 

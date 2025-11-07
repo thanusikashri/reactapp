@@ -13,12 +13,8 @@ function SetName() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Enter your name"
-      />
+      <input type="text" value={input} onChange={(e) => setInput(e.target.value)}
+        placeholder="Enter your name" />
       <button type="submit">Enter</button>
     </form>
   )
