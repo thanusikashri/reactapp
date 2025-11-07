@@ -13,7 +13,7 @@ function SetName() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={input} onChange={(e) => setInput(e.target.value)}
+      <input style={styles.input} type="text" value={input} onChange={(e) => setInput(e.target.value)}
         placeholder="Enter your name" />
       <button type="submit">Enter</button>
     </form>
@@ -34,5 +34,12 @@ function App() {
     </div>
   )
 }
+
+const styles = {
+  input: {
+    padding: '10px 20px',
+    margin: '10px',
+    cursor: 'pointer', 
+  }}
 
 export default App

@@ -21,10 +21,17 @@ export default function Login(){
         <div>
             <h1>Login</h1>
             <form onSubmit={handleLogin}>
-                <input type="text" placeholder='Enter username' value={name}
+                <input style={styles.input} type="text" placeholder='Enter username' value={name}
                 onChange={(e) => setName(e.target.value)} />
                 <button type="submit">Login</button>
             </form>
         </div>
     )
 }
+
+const styles = {
+        input: {
+        padding: '10px 20px',
+        margin: '10px',
+        cursor: 'pointer',
+  }}
